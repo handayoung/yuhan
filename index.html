@@ -2,35 +2,113 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Karim Rashid</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--로고가 위치합니다.-->
-  <header class="logo_form">
-    <div class="logotext_form">
-      <a href="index.html">Karim Rashid</a>
-      </div>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/01_logo.png" alt="sonayoung">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a onclick="fnMove('1')">Package</a></li>
+            <li><a onclick="fnMove('2')">CI/BI</a></li>
+            <li><a onclick="fnMove('3')">Edit</a></li>
+            <li><a onclick="fnMove('4')">UI/UX</a></li>
+
+          </ul>
+        </div>
+      </nav>
     </header>
-  <!--네비게이션이 위치합니다.-->
-  <nav class="menu_form">
-  <ul>
-    <li class="menutext_form"><a href="p01.html">Introduce</a></li>
-    <li class="menutext_form"><a href="p02.html">Masterpiece</a></li>
-    <li class="menutext_form"><a href="p03.html">Interview</a></li>
-</ul>
-  </nav>
-  <!--콘텐츠가 위치합니다.-->
-  <section>
-<div id="pr" class="p1"><div class="posi"><a href="p01.html"><img src="img/bg_title_01.png"></a></div></div>
-<div id="pr" class="p2"><div class="posi"><a href="p01.htm2"><img src="img/bg_title_02.png"></a></div></div>
-<div id="pr" class="p3"><div class="posi"><a href="p01.htm3"><img src="img/bg_title_03.png"></a></div></div>
-  </section>
-  <!--푸터정보가 위치합니다.-->
-  <footer class="footer_form">
-    <div class="footertext_form">
-Copyright 2020 Karim Rashid . All Rights Reserved.
-  </footer>
+
+    <section>
+      <!--키비주얼 부문-->
+      <div class="keyvisual">
+        <div class="keyvisual_wrap">
+          <div class="keyvisual_title" data-aos="flip-left" data-aos-duration="1500">
+          </div>
+        </div>
+      </div>
+
+      <!--프로필 부문-->
+      <div class="profile">
+        <div class="profile_wrap">
+          <div class="profile_01" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_01_txt.png" alt="이름/연락처"></div>
+
+
+        </div>
+      </div>
+
+      <!--포트폴리오 1-->
+      <div class="pf_1" id="anchor1">
+        <div class="pf_wrap">
+
+          <div class="pf_img_1" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_1.png" alt="FAUCHON 패키지 디자인 목업"></div>
+
+        </div>
+      </div>
+
+      <!--포트폴리오 2-->
+      <div class="pf_2" id="anchor2">
+        <div class="pf_wrap">
+
+          <div class="pf_img_2" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_2.png" alt=""></div>
+
+        </div>
+      </div>
+
+      <!--포트폴리오 3-->
+      <div class="pf_3" id="anchor3">
+        <div class="pf_wrap">
+
+          <div class="pf_img_3" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_3.png" alt=""></div>
+
+        </div>
+      </div>
+
+      <!--포트폴리오 4-->
+      <div class="pf_4" id="anchor4">
+        <div class="pf_wrap">
+
+          <div class="pf_img_4" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_4.png" alt=""></div>
+
+        </div>
+      </div>
+
+      <!--포트폴리오 5-->
+
+
+    </section>
+
+    <!--푸터 부문-->
+    <footer>
+      <div class="footer_wrap">
+        <span class="footer_logo"><img src="img/06_footer_logo.png" alt="footer"></span>
+        <span class="footer_txt">Copyright 2020 Ayoung son. All right reserved.<br>e-Mail : sonayounng8@gmail.com</span>
+      </div>
+    </footer>
+
+    <!--스크롤 스크립트-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+        var offset = $("#anchor" + seq).offset();
+        $('html,body').animate({scrollTop : offset.top}, 1200);
+      }
+    </script>
+
+    <!--AOS 스크립트-->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
   </body>
 </html>

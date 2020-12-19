@@ -1,0 +1,36 @@
+*{margin: 0;}
+
+html{font-size: 10px;}
+body{font-size: 1rem;}
+a{text-decoration: none;color: #ffffff;}
+
+header{height: 7.2rem;text-align: center;}
+header > .logo{padding-top: 1.2rem;}
+
+section > .keyvisual{text-align: center;background-image: url('../img/m_03.png');height: 51.7rem;}
+
+section > .keyvisual > img{padding-top: 10.5rem;}
+
+section > .profile{background-image: url('../img/m_08.png');height: 66.7rem;}
+
+.pf_01, .pf_02, .pf_03, .pf_04{text-align: center;}
+
+section > .profile > .pf_01{padding-top: 4.8rem;}
+section > .profile > .pf_02, .pf_03, .pf_04{margin-top: 3.7rem;}
+
+.pf1, .pf2, .pf3, .pf4, .pf5{text-align: center;}
+
+section > .pf1{background-color: #ffffff;height: 58.2rem;}
+section > .pf2{background-color: #ffffff;height: 86.9rem;}
+section > .pf3{background-image: #ffffff; height: 80.1rem;}
+section > .pf4{background-color: #ffffff;height: 77.3rem;}
+
+
+section > .pf1 > img{margin-top: 2.4rem;}
+section > .pf2 > img{margin-top: 2.4rem;}
+section > .pf3 > img{margin-top: 2.4rem;}
+section > .pf4 > img{margin-top: 2.4rem;}
+section > .pf5 > img{margin-top: 2.4rem;}
+
+footer {background-color: #D9BCBC;height: 16.1rem;text-align: center;}
+footer > img{margin-top: 2.2rem;}
